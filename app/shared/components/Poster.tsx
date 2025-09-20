@@ -12,7 +12,7 @@ export default function Poster({ poster, name, dark, size }: PosterProps) {
     posterLink = "https://image.tmdb.org/t/p/w342" + poster;
   }
   return (
-    <div className="aspect-h-9 aspect-w-6 w-full">
+    <div className="w-full aspect-[6/9]">
       {poster ? (
         <img src={posterLink} alt={name} />
       ) : (

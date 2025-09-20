@@ -42,6 +42,7 @@ function Header() {
         </NavListItem>
         <div className="flex-1 my-2 max-w-2xl relative">
           <div className="flex rounded border border-main-light overflow-hidden">
+            {/* TODO: add on submit */}
             <input
               type="text"
               className="flex-1 bg-main px-2 text-white"
@@ -50,7 +51,7 @@ function Header() {
             />
             <Link
               className="text-white bg-success hover:bg-success-dark p-1.5"
-              href={"/search/" + searchPhrase}
+              href={"/search?query=" + searchPhrase}
               onClick={onClick}
             >
               <FaSearch />
